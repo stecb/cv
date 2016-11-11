@@ -1,1 +1,6 @@
-/*This file contains all styles related to the footer of the site/application.*/
+footer {
+  padding: 80px 0;
+  margin-top: 80px;
+  background-color: $dark-grey;
+  color: #fff;
+}

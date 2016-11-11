@@ -4,20 +4,22 @@
  *
  */
 
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-class Skills extends Component {
-
-  componentDidMount() {
-  }
-
-  render() {
-    return (
-      <div>
-        skills
+const Skills = ({ skills }) => (
+  <div>
+    {skills.map(s => (
+      <div key={s.id} className="skill-bar">
+        <div className="skill-bar-perc" style={{ width: ~~s.level }} />
+        <span>{s.name}</span>
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
 
-export default Skills;
+const mapStateToProps = ({ index: { skills } }) => ({ skills });
+
+export default connect(
+  mapStateToProps
+)(Skills);

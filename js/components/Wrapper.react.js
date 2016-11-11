@@ -32,15 +32,20 @@ const Wrapper = ({ head, fullName, children, location }) => (
         <div className={checkActiveClass('/', location.pathname)}>
           <Link to="/">Experience</Link>
         </div>
-        <div className="cv-head-tab">
+        <div className={checkActiveClass('/education', location.pathname)}>
           <Link to="/education">Education</Link>
         </div>
-        <div className="cv-head-tab">
+        <div className={checkActiveClass('/skills', location.pathname)}>
           <Link to="/skills">Skills</Link>
         </div>
       </div>
     </header>
-    {children}
+    <div className="container">{children}</div>
+    <footer>
+      <div className="container">
+        {head.email}
+      </div>
+    </footer>
   </div>
 );
 
