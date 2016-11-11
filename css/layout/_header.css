@@ -1,0 +1,108 @@
+.cv-head {
+  position: relative;
+  text-align: center;
+}
+
+.cv-head:before {
+  content: 'cv generator';
+  position: absolute;
+  left: -60px; top: 30px;
+  width: 200px;
+  padding: 2px;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, .5);
+  font-weight: 100;
+  transform: rotate(-45deg);
+}
+
+.cv-head-top {
+  padding: 80px;
+  padding-bottom: 160px;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.cv-head h1 {
+  margin: 0;
+}
+
+.cv-head h4 {
+  padding: 10px 30px;
+  font-size: 14px;
+  color: $dark-grey;
+  font-style: italic;
+}
+
+.cv-head-box {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -70px;
+  padding-top: 80px;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+}
+
+.cv-head-box img {
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .6);
+  border: 10px solid rgba(255, 255, 255, .4);
+}
+
+.cv-head-tags {
+  padding: 20px;
+  background-color: $white-smoke;
+}
+
+.cv-head-tabs {
+  display: flex;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-head-tab a {
+  position: relative;
+  padding: 20px 50px;
+  margin: 0 10px;
+  border-bottom: 1px solid $light-grey;
+  color: $midlight-grey;
+}
+
+.cv-head-tab.active a {
+  color: $success;
+  border-bottom-color: $success;
+}
+
+.cv-head-tab.active a:before {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  bottom: -11px; left: 50%;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $success;
+}
+
+@media only screen and (min-width : $screen-sm) {
+  .cv-head-box {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width : $screen-md) {
+  .cv-head-box {
+    width: 40%;
+  }
+}

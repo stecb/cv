@@ -1,0 +1,21 @@
+/*This file contains all application-wide CSS variables.*/
+
+$text-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+
+$white-smoke: #FAFAFA;
+$light-grey: #EDEDED;
+$lighter-grey: #DDD;
+$midlight-grey: #BBB;
+$mid-grey: #999;
+$dark-grey: #444;
+$middark-grey: #555;
+$success: #5cb85c;
+
+$max-width: 968px;
+
+/* breakpoints */
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;

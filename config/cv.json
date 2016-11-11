@@ -1,0 +1,49 @@
+{
+  "head": {
+    "id": 1,
+    "first_name": "Stefano",
+    "last_name": "Ceschi Berrini",
+    "title": "Sr. Software Engineer",
+    "email": "stefano.ceschib@gmail.com",
+    "dob": "29/05/1984",
+    "twitter": "@stecb",
+    "avatar": "https://graph.facebook.com/v2.8/512242393/picture?width=300",
+    "cover": "https://source.unsplash.com/R3pUGn5YiTg/1600x900",
+    "tags": "JavaScript, React, Web Design, Node.js, Webpack",
+    "headline": "I’ve been coding, in particular with JavaScript, for almost 8 years and I love building fast, performant, rock solid web interfaces/applications both for desktop and mobile. I like challenges and I’m eager to learn new things and to improve every day."
+  },
+  "experience": [
+    {
+      "from": "10/12/2011",
+      "to": "10/11/2012",
+      "location": "Padova",
+      "company": "Zuchetti",
+      "title": "Software Engineer",
+      "headlines": [
+        "built something",
+        "built something else"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "from": "2004",
+      "to": "2007",
+      "institute": "Unipd",
+      "degree": "BSc Computer Science",
+      "tags": "Software Engineering, Algorithms, Artificial Intelligence, Web Development, OOP, Distributed programming, Computer Architecture, Computer Security"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "name": "JavaScript",
+      "level": "100"
+    },
+    {
+      "id": "2",
+      "name": "C++",
+      "level": "50"
+    }
+  ]
+}
