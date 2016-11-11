@@ -10,9 +10,9 @@ import { Link } from 'react-router';
 
 import Head from './Head.react';
 
-const checkActiveClass = (curr, kind) => {
+const checkActiveClass = (curr, path) => {
   const arr = ['cv-head-tab'];
-  (curr === kind) && arr.push('active');
+  (curr === path) && arr.push('active');
   return arr.join(' ');
 };
 
@@ -36,7 +36,7 @@ const Wrapper = ({ head, fullName, children, location }) => (
         </div>
       </div>
       <div className="cv-head-tabs container">
-        <div className={checkActiveClass('/cv', location.pathname)}>
+        <div className={checkActiveClass('/cv', location.pathname.replace(/\/$/, ''))}>
           <Link to="/cv">Experience</Link>
         </div>
         <div className={checkActiveClass('/cv/education', location.pathname)}>
