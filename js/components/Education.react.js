@@ -1,23 +1,18 @@
-/**
- *
- * App.react.js
- *
- */
+import React from 'react';
+import { connect } from 'react-redux';
 
-import React, { Component } from 'react';
-
-class Education extends Component {
-
-  componentDidMount() {
-  }
-
-  render() {
-    return (
-      <div>
-        Education
+const Education = ({ education }) => (
+  <div className="animated fadeIn">
+    {education.map(e => (
+      <div key={e.id}>
+        {e.institute}
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
 
-export default Education;
+const mapStateToProps = ({ index: { education } }) => ({ education });
+
+export default connect(
+  mapStateToProps
+)(Education);

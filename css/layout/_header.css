@@ -1,6 +1,7 @@
 .cv-head {
   position: relative;
   text-align: center;
+  background-color: #fff;
 }
 
 .cv-head:before {
@@ -65,13 +66,13 @@
 
 .cv-head-tabs {
   display: flex;
-  margin: 40px auto;
+  margin-top: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .cv-head-tab {
-  width: 30%;
+  width: 32%;
 }
 
 .cv-head-tab a {
@@ -80,7 +81,6 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  margin: 0 10px;
   border-bottom: 1px solid $light-grey;
   color: $midlight-grey;
   text-decoration: none;

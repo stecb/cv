@@ -1,23 +1,18 @@
-/**
- *
- * App.react.js
- *
- */
+import React from 'react';
+import { connect } from 'react-redux';
 
-import React, { Component } from 'react';
-
-class Experience extends Component {
-
-  componentDidMount() {
-  }
-
-  render() {
-    return (
-      <div>
-        Exp
+const Experience = ({ experience }) => (
+  <div className="animated fadeIn">
+    {experience.map(e => (
+      <div key={e.id}>
+        {e.company}
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
 
-export default Experience;
+const mapStateToProps = ({ index: { experience } }) => ({ experience });
+
+export default connect(
+  mapStateToProps
+)(Experience);

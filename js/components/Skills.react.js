@@ -8,10 +8,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const Skills = ({ skills }) => (
-  <div>
+  <div className="animated fadeIn">
     {skills.map(s => (
-      <div key={s.id} className="skill-bar">
-        <div className="skill-bar-perc" style={{ width: ~~s.level }} />
+      <div key={s.name} className="skill-bar">
+        <div
+          className="skill-bar-perc"
+          style={{ width: `${s.level}%`, backgroundColor: s.bg }}
+        />
         <span>{s.name}</span>
       </div>
     ))}

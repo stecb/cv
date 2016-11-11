@@ -40,7 +40,9 @@ const Wrapper = ({ head, fullName, children, location }) => (
         </div>
       </div>
     </header>
-    <div className="container">{children}</div>
+    <section id="main">
+      <div className="container">{children}</div>
+    </section>
     <footer>
       <div className="container">
         {head.email}
