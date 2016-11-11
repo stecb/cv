@@ -78,7 +78,7 @@ module.exports = function(options) {
     output: { // Compile into js/build.js
       path: path.resolve(__dirname, 'build'),
       filename: options.prod ? "js/bundle.[chunkhash].js" : "js/build.js",
-      publicPath: options.prod ? '/cv' : '/'
+      publicPath: options.prod ? '/cv/build' : '/'
     },
     module: {
       loaders: [{
