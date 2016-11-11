@@ -66,7 +66,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 render((
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={Wrapper}>
+      <Route path="/cv" component={Wrapper}>
         <IndexRoute component={Experience} />
         <Route path="education" component={Education} />
         <Route path="skills" component={Skills} />

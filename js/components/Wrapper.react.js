@@ -8,6 +8,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
+import Head from './Head.react';
+
 const checkActiveClass = (curr, kind) => {
   const arr = ['cv-head-tab'];
   (curr === kind) && arr.push('active');
@@ -16,6 +18,11 @@ const checkActiveClass = (curr, kind) => {
 
 const Wrapper = ({ head, fullName, children, location }) => (
   <div>
+    <Head
+      title={fullName}
+      description={head.headline}
+      section={location.pathname.replace(/\/cv(\/)?/, '')}
+    />
     <header className="cv-head">
       <div className="cv-head-top" style={{ backgroundImage: `url(${head.cover})` }}>
         <h1>{fullName}</h1>
@@ -29,14 +36,14 @@ const Wrapper = ({ head, fullName, children, location }) => (
         </div>
       </div>
       <div className="cv-head-tabs container">
-        <div className={checkActiveClass('/', location.pathname)}>
-          <Link to="/">Experience</Link>
+        <div className={checkActiveClass('/cv', location.pathname)}>
+          <Link to="/cv">Experience</Link>
         </div>
-        <div className={checkActiveClass('/education', location.pathname)}>
-          <Link to="/education">Education</Link>
+        <div className={checkActiveClass('/cv/education', location.pathname)}>
+          <Link to="/cv/education">Education</Link>
         </div>
-        <div className={checkActiveClass('/skills', location.pathname)}>
-          <Link to="/skills">Skills</Link>
+        <div className={checkActiveClass('/cv/skills', location.pathname)}>
+          <Link to="/cv/skills">Skills</Link>
         </div>
       </div>
     </header>
