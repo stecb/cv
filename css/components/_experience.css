@@ -2,7 +2,7 @@
   position: relative;
   padding: 40px;
   padding-right: 0;
-  border-left: 3px solid $white-smoke;
+  border-left: 3px solid $light-grey;
 }
 
 .experience-entry:not(:last-child) {
@@ -13,10 +13,10 @@
   content: '';
   position: absolute;
   left: -14px;
-  top: 40px;
+  top: 57px;
   width: 25px;
   height: 25px;
-  background-color: $white-smoke;
+  background-color: $light-grey;
   border-radius: 50%;
 }
 
