@@ -33,7 +33,7 @@
   padding: 10px 30px;
   font-size: 14px;
   color: $dark-grey;
-  font-style: italic;
+  font-weight: 100;
 }
 
 .cv-head-box {
@@ -84,6 +84,14 @@
   border-bottom: 1px solid $light-grey;
   color: $midlight-grey;
   text-decoration: none;
+}
+
+.cv-head-tab:not(.active) a:hover {
+  color: $mid-grey;
+} 
+
+.cv-head-tab:not(.active) a:active {
+  top: 1px;
 }
 
 .cv-head-tab.active a {

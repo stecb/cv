@@ -1,0 +1,22 @@
+.education-entry {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.education-info {
+  margin-bottom: 10px;
+}
+
+.education-date {
+  position: absolute;
+  left: -41px;
+  top: 18px;
+  width: 130px;
+  padding: 2px;
+  font-size: 12px;
+  background-color: $light-grey;
+  font-weight: 100;
+  transform: rotate(-45deg);
+}

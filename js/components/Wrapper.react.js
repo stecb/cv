@@ -16,12 +16,12 @@ const checkActiveClass = (curr, path) => {
   return arr.join(' ');
 };
 
-const Wrapper = ({ head, fullName, children, location }) => (
+const Wrapper = ({ head, fullName, children, location: { pathname } }) => (
   <div>
     <Head
       title={fullName}
       description={head.headline}
-      section={location.pathname.replace(/\/cv(\/)?/, '')}
+      section={pathname.replace(/\/cv(\/)?/, '')}
     />
     <header className="cv-head">
       <div className="cv-head-top" style={{ backgroundImage: `url(${head.cover})` }}>
@@ -36,13 +36,13 @@ const Wrapper = ({ head, fullName, children, location }) => (
         </div>
       </div>
       <div className="cv-head-tabs container">
-        <div className={checkActiveClass('/cv', location.pathname.replace(/\/$/, ''))}>
+        <div className={checkActiveClass('/cv', pathname.replace(/\/$/, ''))}>
           <Link to="/cv">Experience</Link>
         </div>
-        <div className={checkActiveClass('/cv/education', location.pathname)}>
+        <div className={checkActiveClass('/cv/education', pathname)}>
           <Link to="/cv/education">Education</Link>
         </div>
-        <div className={checkActiveClass('/cv/skills', location.pathname)}>
+        <div className={checkActiveClass('/cv/skills', pathname)}>
           <Link to="/cv/skills">Skills</Link>
         </div>
       </div>
@@ -52,7 +52,8 @@ const Wrapper = ({ head, fullName, children, location }) => (
     </section>
     <footer>
       <div className="container">
-        {head.email}
+        <a href={`mailto:${head.email}`}>{head.email}</a>
+        <a target="_blank" href={`https://twitter.com/${head.twitter}`}>{head.twitter}</a>
       </div>
     </footer>
   </div>

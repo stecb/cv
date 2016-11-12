@@ -10,19 +10,72 @@
     "avatar": "https://graph.facebook.com/v2.8/512242393/picture?width=300",
     "cover": "https://source.unsplash.com/R3pUGn5YiTg/1600x900",
     "tags": "JavaScript, React, Web Design, Node.js, Webpack",
-    "headline": "I’ve been coding, in particular with JavaScript, for almost 8 years and I love building fast, performant, rock solid web interfaces/applications both for desktop and mobile. I like challenges and I’m eager to learn new things and to improve every day."
+    "headline": "I’ve been coding, in particular with JavaScript, for almost 8 years and I love building fast, performant, rock solid web interfaces/applications both for desktop and mobile."
   },
   "experience": [
     {
       "id": "1",
-      "from": "10/12/2011",
-      "to": "10/11/2012",
+      "from": "May 2016",
+      "to": "Present",
+      "location": "Padova/Berlin",
+      "company": "Sherlock Homes",
+      "title": "Co founder / Sr. Software Engineer",
+      "headlines": [
+        "Designed the whole UI;",
+        "Built a blazing fast node application from scratch using React, React Router, Redux, Redux Saga, Webpack;",
+        "Contributed to building the backend APIs w/ Ruby on Rails to crawl thousands of apartments form different sources and to allow Landlords/Agencies to add their own apartments on our platform."
+      ]
+    },
+    {
+      "id": "2",
+      "from": "March 2012",
+      "to": "Present",
+      "location": "Padova/Lugano",
+      "company": "Timerepublik SA",
+      "title": "Sr. Software Engineer",
+      "headlines": [
+        "Built a proprietary React flux and Router implementation and a system that allows React Components to be rendered on the server within a Ruby on Rails application;",
+        "Built an extremely fast and performant gelocation search engine on top of Sphinx and Google Maps with Ruby and React. Search pages load time is now 70% faster. Coded both backend and frontend;",
+        "Developed a JavaScript/CSS framework aimed to simplify the frontend architecture. Used intensively caching, debounce/throttle and other techniques plus css animations to make an awesome user experience;",
+        "Improved the invitations system and designed user activities newsfeed. Registered users per day increased fivefold."
+      ]
+    },
+    {
+      "id": "3",
+      "from": "Dec 2014",
+      "to": "Jan 2015",
       "location": "Padova",
-      "company": "Zuchetti",
+      "company": "IFAD - International Fund for Agricultural Development",
+      "title": "Sr. Software Engineer",
+      "headlines": [
+        "Built an open source Ruby On Rails application that allows site owners to insert help elements in their site: tooltips, banners, tutorials;",
+        "Coded a modular JavaScript application that can be dinamically embedded inside any website and it communicates with the aforementioned application through jSonp and postMessage."
+      ]
+    },
+    {
+      "id": "4",
+      "from": "Feb 2011",
+      "to": "Mar 2012",
+      "location": "Amsterdam",
+      "company": "Fitmo B.V.",
       "title": "Software Engineer",
       "headlines": [
-        "built something",
-        "built something else"
+        "Built an MVC JavaScript framework on top of Mustache and MooTools;",
+        "Improved the existing front-end codebase, switched to HAML/SASS/COMPASS, and created a build/cache system that decreased by 50% load time and eliminated the time to download html mustache templates once cached;",
+        "Coded an <svg> based interactive timeline where users could schedule their fitness activities."
+      ]
+    },
+    {
+      "id": "5",
+      "from": "Jan 2008",
+      "to": "Feb 2011",
+      "location": "Padova",
+      "company": "Zucchetti SPA",
+      "title": "Web developer/Researcher",
+      "headlines": [
+        "Built a light, easy(as much as possible) and cross-browser CMS (Java, jsp, taglib, JavaScript, AJAX, HTML) including some correlated tools to improve User-friendliness;",
+        "Invented an algorithm that in O(n) time (before it was O(n2)) transforms absolute positioned elements (inside zucchetti’s proprietary editor) into inline floating elements so the container of those elements grows properly;",
+        "Interviewed candidates and proposed projects to the Computer Science faculty of University of Padua for the Software engineering course."
       ]
     }
   ],
@@ -34,43 +87,75 @@
       "institute": "Unipd",
       "degree": "BSc Computer Science",
       "tags": "Software Engineering, Algorithms, Artificial Intelligence, Web Development, OOP, Distributed programming, Computer Architecture, Computer Security"
+    },
+    {
+      "id": "2",
+      "from": "1998",
+      "to": "2003",
+      "institute": "ITC Calvi",
+      "degree": "Accountancy/Computer science expert",
+      "tags": "Accountancy, Echonomics, Maths, Computer science basics"
     }
   ],
-  "skills": [
-    {
-      "name": "JavaScript",
-      "level": "100",
-      "bg": "#5cb85c"
-    },
-    {
-      "name": "React",
-      "level": "100",
-      "bg": "#5cb85c"
-    },
-    {
-      "name": "Html",
-      "level": "95",
-      "bg": "#5cb85c"
-    },
-    {
-      "name": "CSS",
-      "level": "90",
-      "bg": "#5cb85c"
-    },
-    {
-      "name": "SQL",
-      "level": "40",
-      "bg": "#f0ad4e"
-    },
-    {
-      "name": "C++",
-      "level": "30",
-      "bg": "#f0ad4e"
-    },
-    {
-      "name": "Python",
-      "level": "10",
-      "bg": "#e01945"
-    }
-  ]
+  "skills": {
+    "list": [
+      {
+        "name": "JavaScript *",
+        "level": "98"
+      },
+      {
+        "name": "React",
+        "level": "98"
+      },
+      {
+        "name": "Html/HAML",
+        "level": "95"
+      },
+      {
+        "name": "CSS/SASS",
+        "level": "90"
+      },
+      {
+        "name": "Ruby on Rails",
+        "level": "75"
+      },
+      {
+        "name": "Ruby",
+        "level": "72"
+      },
+      {
+        "name": "Photoshop",
+        "level": "40"
+      },
+      {
+        "name": "Illustrator",
+        "level": "40"
+      },
+      {
+        "name": "SQL",
+        "level": "40"
+      },
+      {
+        "name": "C",
+        "level": "45"
+      },
+      {
+        "name": "C++",
+        "level": "35"
+      },
+      {
+        "name": "Java",
+        "level": "35"
+      },
+      {
+        "name": "Php",
+        "level": "25"
+      },
+      {
+        "name": "Python",
+        "level": "10"
+      }
+    ],
+    "extra": "* I’ve been working professionally with JavaScript for almost 8 years. I’m currently mostly coding with: ES6/7 (w/ Babel), Flow, Node, React, Jest, Webpack, Redux. I coded also with Ember, Angular, MooTools, jQuery, dojo, CoffeeScript, Backbone.js, Lodash, Jasmine, Mustache"
+  }
 }

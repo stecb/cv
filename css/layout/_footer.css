@@ -2,4 +2,18 @@ footer {
   padding: 80px 0;
   background-color: $dark;
   color: #fff;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer a:last-child {
+  margin-left: 0;
+}
+
+footer a:not(:last-child):after {
+  content: '-';
+  margin-left: 10px;
 }

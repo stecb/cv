@@ -7,3 +7,9 @@
   font-size: 12px;
   border-radius: 3px;
 }
+
+.tag-secondary {
+  background-color: transparent;
+  border: 1px solid $light-grey;
+  color: $mid-grey;
+}
