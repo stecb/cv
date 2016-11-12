@@ -1,5 +1,5 @@
 footer {
-  padding: 80px 0;
+  padding-top: 80px;
   background-color: $dark;
   color: #fff;
   text-align: center;
@@ -9,11 +9,18 @@ footer a {
   margin: 0 10px;
 }
 
-footer a:last-child {
+footer a:last-of-type {
   margin-left: 0;
 }
 
-footer a:not(:last-child):after {
+footer a:not(:last-of-type):after {
   content: '-';
   margin-left: 10px;
+}
+
+footer > div:last-child {
+  background-color: #000;
+  margin-top: 80px;
+  padding: 20px;
+  font-size: 12px;
 }

@@ -55,6 +55,7 @@ const Wrapper = ({ head, fullName, children, location: { pathname } }) => (
         <a href={`mailto:${head.email}`}>{head.email}</a>
         <a target="_blank" href={`https://twitter.com/${head.twitter}`}>{head.twitter}</a>
       </div>
+      <div>Test project by Stefano Ceschi Berrini &copy; {(new Date).getFullYear()}</div>
     </footer>
   </div>
 );
