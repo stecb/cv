@@ -1,6 +1,6 @@
 /**
  *
- * CVHead.react.js
+ * Wrapper.react.js
  *
  */
 
