@@ -36,14 +36,13 @@ export default connect(
 )(Section(Experience));
 
 /*
-"id": "1",
-"from": "10/12/2011",
-"to": "10/11/2012",
-"location": "Padova",
-"company": "Zuchetti",
-"title": "Software Engineer",
-"headlines": [
-  "built something",
-  "built something else"
-]
+
+id
+from
+to
+location
+company
+title
+headlines: []
+
 */

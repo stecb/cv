@@ -37,3 +37,13 @@ const mapStateToProps = ({ index: { skills } }) => ({ skills });
 export default connect(
   mapStateToProps
 )(Section(Skills));
+
+/*
+list: [
+  {
+    name,
+    level
+  }
+],
+extra
+*/

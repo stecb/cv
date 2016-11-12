@@ -35,11 +35,11 @@ export default connect(
 
 /*
 
-"id": "1",
-"from": "2004",
-"to": "2007",
-"institute": "Unipd",
-"degree": "BSc Computer Science",
-"tags": "Software Engineering, Algorithms, Artificial Intelligence, Web Development, OOP, Distributed programming, Computer Architecture, Computer Security"
+id
+from
+to
+institute
+degree
+tags
 
 */
